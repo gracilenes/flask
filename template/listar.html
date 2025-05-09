@@ -1,0 +1,7 @@
+<h1>Usuários Cadastrados</h1>
+<ul>
+{% for u in usuarios %}
+    <li>{{ u.nome }} - {{ u.login }}</li>
+{% endfor %}
+</ul>
+<a href="/">Voltar</a>
