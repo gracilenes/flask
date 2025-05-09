@@ -1,7 +1,7 @@
-<h1>Usuários Cadastrados</h1>
+<h2>Usuários Cadastrados</h2>
 <ul>
 {% for u in usuarios %}
-    <li>{{ u.nome }} - {{ u.login }}</li>
+    <li>{{ u.nome }} ({{ u.login }}) - <a href="/excluirUsuario/{{ u.login }}">Excluir</a></li>
 {% endfor %}
 </ul>
 <a href="/">Voltar</a>
